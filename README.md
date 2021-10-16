@@ -9,9 +9,16 @@ Apply multiple linear regression on the independent variables such as vehicle le
 #### Result
 
 - Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
+
+Based on the significance level (ɑ=0.05), the vehicle length and ground clearance have provided a non-random amount of variance to the mpg values. Plus, the intercept has a significant impact on mpg values as well, it may mean that there are other factors can explain the mpg values that are not included in the dataset.
+
 - Is the slope of the linear model considered to be zero? Why or why not?
+
+The slope of the linear model is not considered to be zero because there is sufficient evidence showing that there are two independent variables (vehicle length and ground clearance) correlated to the dependent variable (mpg).
+
 - Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
 
+The multiple R-squared is 0.7085, which means that roughly 71% of the variability of dependent variable (mpg) can be predicted effectively in this linear model. 
 ```
 Call:
 lm(formula = mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD, data = mecha_car)
@@ -40,8 +47,7 @@ F-statistic: 22.07 on 5 and 44 DF,  p-value: 5.35e-11
 ## Summary Statistics on Suspension Coils
 To test if the manufacturing process is consistent across production lots, compute summary statistics for PSI metrics for each lot. The variance of the suspension coils must not exceed 100 pounds per square inch.
 #### Result
-The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
-
+As we can see from two summary tables, the suspension coils meet the required pounds per square inch (PSI) when all manufacturing lots counted in total (variance = 62.29). Individually, lot1 (variance = 0.98) and lot2 (variance = 7.47) are meeting the design specifications with very low PSI. However, lot3 (variance = 170.28) does not meet the design specifications.
 
 ###### Total Summary
 ![](Results/total_summary.png)
@@ -51,14 +57,10 @@ The design specifications for the MechaCar suspension coils dictate that the var
 <img src="Results/lot_boxplot.png" width=50% height=50%>
 
 ## T-Tests on Suspension Coils
-perform t-tests to determine if all manufacturing lots and each lot individually are statistically different from the population mean of 1,500 pounds per square inch.
+Perform t-tests to determine if all manufacturing lots and each lot individually are statistically different from the population mean of 1,500 pounds per square inch.
 
 #### Result
-
-- Lot1
-- Lot2
-- Lot3
-
+Based on the significance level (ɑ=0.05), only manufacturing lot3 (p-value = 0.042) has statistically different from the population mean of 1,500 pounds per square inch.
 
 ```
 > t.test(Lot1_table$PSI,mu=1500)
