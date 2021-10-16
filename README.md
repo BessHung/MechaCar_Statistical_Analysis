@@ -104,3 +104,26 @@ mean of x
 ```
 
 ## Study Design: MechaCar vs Competition
+This statistical study is designed to compare performance of MechaCar vehicles against performance of vehicles from other manufacturers. People sometime are driving the car with their friends, family or lover, so I believe that the safety of the car may be the most important feature that many consumers are concerned about. We have summarized the information of this statistical testing as following:
+
+- Metrics: 
+
+  1. MechaCar’s vehicles safety feature rating
+
+  2. Competitor’s vehicles safety feature rating
+
+- Hypotheses
+
+  H0: There is no statistical difference between MechaCar's safety rating and competition's safety rating.
+
+  Ha: There is a statistical difference that MechaCar's safety rating is greater than competition's safety rating.
+
+- Statistical test
+
+  Two-sample t-test. Applying two-sample t-test, we can determine whether the means of two samples are statistically different. 
+
+- Data
+
+  Huge dataset of safety feature rating contain MechaCar and competitor’s vehicles. We may need to group all the manufacturers into one competitor group for statistical testing.
+
+
