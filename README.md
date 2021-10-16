@@ -1,21 +1,8 @@
-suspension coils 懸掛線圈 
-   pounds per square inch (PSI)   每平方英寸磅
-
-spoiler_angle 車子尾翼 角度
-ground_clearance 車底離地面的間隙
-AWD ( All-Wheel Drive) 四輪傳動
-mpg (miles per gallon) 
-
-
-quarter-mile time (qsec) dependent variable, we can add other variables of interest such as fuel efficiency (mpg), engine size (disp), rear axle ratio (drat), vehicle weight (wt), and horsepower (hp) 
-
-
 # MechaCar_Statistical_Analysis
 
 ## Project Overview
 AutosRUs’ newest prototype, the MechaCar, is suffering from production troubles that are blocking the manufacturing team’s progress. So, in this project, we are going to help the team reviewing production data and providing statistical testing results to find out any coefficients in different metrics.
 
-## Result
 ## Linear Regression to Predict MPG
 Apply multiple linear regression on the independent variables such as vehicle length, vehicle weight, spoiler angle, drivetrain, and ground clearance to predict MPG.
 
@@ -57,10 +44,11 @@ The design specifications for the MechaCar suspension coils dictate that the var
 
 
 ###### Total Summary
+![](Results/total_summary.png)
 ###### Lot Summary
+![](Results/lot_summary.png)
 ###### Boxplot per Lot
-
-
+<img src="Results/lot_boxplot.png" width=50% height=50%>
 
 ## T-Tests on Suspension Coils
 perform t-tests to determine if all manufacturing lots and each lot individually are statistically different from the population mean of 1,500 pounds per square inch.
